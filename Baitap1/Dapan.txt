@@ -1,0 +1,20 @@
+1. int func1(int);  
+→ Hợp lệ, khai báo một hàm nhận int trả về int.
+
+2. float func1(int);  
+→ Lỗi: cùng tên func1 và cùng tham số int, nhưng khác kiểu trả về. Trong C++ không cho phép overload chỉ khác kiểu trả về.
+
+3. int func1(float);  
+→ Hợp lệ, khác tham số (float), nên được coi là overload.
+
+4. void func1(int = 0, int);  
+→ Lỗi: tham số mặc định chỉ được khai báo từ phải sang trái. Ở đây tham số đầu có giá trị mặc định nhưng tham số sau lại không có, gây lỗi cú pháp.
+
+5. void func2(int, int = 0);  
+→ Hợp lệ, tham số mặc định ở cuối.
+
+6. void func2(int);  
+→ Lỗi: trùng với prototype void func2(int, int = 0); vì khi gọi func2(x) thì tham số thứ hai mặc định bằng 0, dẫn đến mơ hồ.
+
+7. void func2(float);  
+→ Hợp lệ, overload với tham số khác kiểu.

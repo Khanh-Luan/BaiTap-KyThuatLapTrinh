@@ -1,0 +1,4 @@
+Vet dau thu 1 co kich thuoc: 3
+Vet dau thu 2 co kich thuoc: 3
+Vet dau thu 3 co kich thuoc: 1
+Tong so vet dau: 3

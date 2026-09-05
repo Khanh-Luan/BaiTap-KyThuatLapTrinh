@@ -1,0 +1,20 @@
+1. func();  
+→ Không truyền tham số → khớp với func(float i=0, float j=0)  
+→ In: So thuc: 0 0
+
+2. func(i); với i = 1  
+→ Có thể gọi func(int, int=0) hoặc func(float=0, float=0) với ép kiểu.
+→ Ưu tiên khớp chính xác kiểu int.
+→ In: So nguyen: 1 0
+
+3. func(f); với f = 1.5  
+→ Khớp với func(float, float=0)  
+→ In: So thuc: 1.5 0
+
+4. func(i, j); với i=1, j=2  
+→ Khớp với func(int, int=0)  
+→ In: So nguyen: 1 2
+
+5. func(f, g); với f=1.5, g=2.5  
+→ Khớp với func(float, float)  
+→ In: So thuc: 1.5 2.5
